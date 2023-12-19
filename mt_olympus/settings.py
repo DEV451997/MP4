@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-)z6^tcwnaa_)k1k)m#s*fg%!u0+z_bs*w&&jn=1gj)uw0lqgoc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-dev451997-mp4-udrr7yfp7vk.ws-eu106.gitpod.io']
+ALLOWED_HOSTS = ['8000-dev451997-mp4-udrr7yfp7vk.ws-eu107.gitpod.io']
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -60,7 +61,10 @@ ROOT_URLCONF = 'mt_olympus.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
