@@ -1,0 +1,1 @@
+web: gunicorn mt_olympus.wsgi:application
