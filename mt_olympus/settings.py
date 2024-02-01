@@ -185,7 +185,7 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'mt-olympus'
     AWS_S3_REGION_NAME = 'eu-west-2'
@@ -208,7 +208,7 @@ if 'USE_AWS' in os.environ:
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51OcTbAA6y8PzZ2kYcvGJHqinyjc9Lyxr2fd1yPU3Fr4zeERuDVQHjUw4YV2M0hbOerHI9WV4qlxM8w0Aus11l6bV00HQmf17MV')
-STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51OcTbAA6y8PzZ2kYdrvA72zJA6OJQC8Tbfr3uMFmBTinHCcWcHsrydhb48IpyPOJNx8uIoVPXcKiadK0Qw4AofpA00DGF4njqb')
-STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', 'whsec_HIg6FJg4LaV1mIwWWLymgBkE1iHkhozu')
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'mtolympus@gods.com'
