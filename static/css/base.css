@@ -19,7 +19,12 @@ body {
     width: 1.5rem;
 }
 
-.logo-font {
+#delivery-banner a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-font  {
     text-transform: uppercase;
 }
 
@@ -326,4 +331,16 @@ input[name='q']::placeholder {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+}
+
+/* Contact form styling */
+
+.contact-header {
+    padding-top: 200px;
+    color: white;
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 10px;
 }

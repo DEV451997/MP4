@@ -23,10 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'j0f#=e&hwft-43=kg#(ur=h%bc6+^y++rrf7!8chimv(pv!*$y')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = 'true',
 
 ALLOWED_HOSTS = ['8000-dev451997-mp4-udrr7yfp7vk.ws-eu108.gitpod.io', 'mt-olympus-c1f69a0afc85.herokuapp.com','localhost']
 
@@ -210,7 +211,7 @@ STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
-DEFAULT_FROM_EMAIL = 'mtolympus@gods.com'
+DEFAULT_FROM_EMAIL = ('EMAIL_HOST_USER')
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
