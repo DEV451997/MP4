@@ -3,7 +3,6 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 from .forms import UserProfileForm
-from wishlist.models import WishlistItem
 
 from checkout.models import Order
 
@@ -24,8 +23,6 @@ def profile(request):
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
 
-    # Retrieve wishlist items for the current user
-    wishlist_items = WishlistItem.objects.filter(user=request.user)
 
     template = 'profiles/profile.html'
     context = {
