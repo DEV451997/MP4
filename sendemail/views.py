@@ -36,3 +36,22 @@ class ContactView(FormView):
             recipient_list=[settings.NOTIFY_EMAIL],
         )
         return super(ContactView, self).form_valid(form)
+
+def contact(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Form submitted successfully')
+            return redirect('contact')  # Redirect to the same page to display the success message
+        else:
+            messages.error(request, 'Form submission failed. Please ensure the form is filled out.')
+    else:
+        form = ContactForm()
+
+    template = 'contact.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
