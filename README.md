@@ -1,39 +1,161 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Mt. Olympus
 
-Welcome,
+<img src="">
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Development Life Cycle
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+### Project Requirements
 
-## Codeanywhere Reminders
+### Data Handling
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### Database Structure
 
-`python3 -m http.server`
+### User Functionality
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Structure
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## What is Mt.Olympus
 
-`http_server`
+## Project Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## User Goals
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Research
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+|  |  |  |
 
-To log into the Heroku toolbelt CLI:
+### Key Takeaways
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+# Features
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## User Stories
 
----
+## User Story Testing
 
-Happy coding!
+| **Feature** | **Expect** | **Action/Result** | 
+| -------- | -------- | -------- |
+|  | |  |
+
+<details><summary>Screen Recording</summary>
+
+<img src="">
+
+</details>
+
+| **Feature** | **Expect** | **Action/Result** | 
+| -------- | -------- | -------- |
+|  |  |  |
+
+<details><summary>Screen Recording</summary>
+
+<img src="">
+
+</details>
+
+| **Feature** | **Expect** | **Action/Result** | 
+| -------- | -------- | -------- |
+|  |  |  |
+
+<details><summary>Screen Recording</summary>
+
+<img src="">
+
+</details>
+
+| **Feature** | **Expect** | **Action/Result** | 
+| -------- | -------- | -------- |
+|  |  |  |
+
+<details><summary>Screen Recording</summary>
+
+<img src="">
+
+</details>
+
+| **Feature** | **Expect** | **Action/Result** | 
+| -------- | -------- | -------- |
+|  |   |  |
+
+<details><summary>Screen Recording</summary>
+
+<img src="">
+
+</details>
+
+## Future Features
+
+# Design and Structure
+
+## Structure
+
+### Colors
+
+<img src="">
+<img src="">
+
+### Languages Used
+
+### Tools
+
+* [Git](https://git-scm.com/)
+Used for version control via GitPod by using the terminal to Git and Push to GitHub.
+* [GitHub](https://github.com/)
+Used to store the project code after being created in GitPod / Git.
+* [Gitpod](https://www.gitpod.io/)
+Used to create, edit & preview the project's code.
+* [Heroku](https://www.heroku.com/)
+Used to deploy the finished website.
+* [ElephantSQL]()
+* [AWS S3]()
+
+
+# Testing
+
+## HTML Validation
+
+[HTML Validator](https://validator.w3.org/) The HTML pages were run through a HTML Validator.
+<details><summary>HTML</summary><img src=""></details>
+
+## CSS Validation
+
+[CSS Validator](https://jigsaw.w3.org/css-validator/) The CSS page was run through a CSS Validator.
+<details><summary>Stylesheet</summary><img src=""></details>
+
+## Javascript Validation
+
+[Javascript Validator](https://jshint.com/) The Javascript page was run through jshint.
+<details><summary>JS</summary><img src=""></details>
+
+## Python Validation
+
+[Python Validator](https://pep8ci.herokuapp.com/) The Python page was run through pep8 validator.
+<details><summary>Python</summary><img src=""></details>
+
+## Responsiveness
+
+The site was tested on the following devices:
+* Asus Vivobook Book Pro 16"
+* Samsung S23 Ultra
+* Samsung S20
+* Acer Chromebook 14"
+* Google Developer tools. Utilizing all dimensions including the responsive option.
+
+<details><summary>Dev Tools</summary><img src=""></details>
+
+## Deployment
+
+### Step by step guide to deploying to Heroku
+* I initiated the deployment process by creating a Heroku account.
+* Prior to deployment, I prepared the project by creating essential configuration files. The requirements.txt file documented the project's dependencies, ensuring a seamless setup on Heroku. Additionally, the Procfile was crafted to specify the commands Heroku should execute to run the application.
+* Navigating to the Heroku dashboard, I created a new application to serve as the deployment target.
+* With the Heroku app in place, I connected it to my GitHub repository. This integration facilitated a streamlined deployment workflow, enabling automatic updates upon code changes.
+* In the app's settings, I accessed the "Config Vars" section to securely manage environment variables. This step involved inputting sensitive information, such as API keys or database credentials, ensuring the secure functioning of the deployed application.
+* I further enhanced the deployment process by configuring automatic deploys directly from my GitHub repository, by pushing requirements.txt and the Procfile.
+* Each subsequent push to the branch, the application on Heroku updated, maintaining synchronization with the latest codebase.
+
+### Step by step guide for ElephantSQL
+
+### Step by step guide for AWS S3
+
+## Credits
+
