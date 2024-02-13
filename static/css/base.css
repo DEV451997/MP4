@@ -352,3 +352,7 @@ input[name='q']::placeholder {
 #contact-form input::placeholder {
     color: #aab7c4;
 }
+
+.blog-header {
+    margin-top: 200px;
+}
