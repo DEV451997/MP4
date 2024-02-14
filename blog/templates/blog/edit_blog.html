@@ -26,14 +26,14 @@
                 <form method="POST" action="" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
-                        {% if field.name != 'image' %}
+                        {% if field.name != 'thumbnail' %} 
                             {{ field | as_crispy_field }}
                         {% else %}
                             {{ field }}
                         {% endif %}
                     {% endfor %}
                     <div class="text-right">
-                        <a class="btn btn-outline-black rounded-0" href="">Cancel</a>
+                        <a class="btn btn-outline-black rounded-0" href="{% url 'blog' %}">Cancel</a>
                         <button class="btn btn-black rounded-0" type="submit">Update Blog</button>
                     </div>
                 </form>

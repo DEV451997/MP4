@@ -1,5 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Post, Category
+from django.contrib.auth.decorators import login_required
+from .forms import PostForm
 
 def blog(request):
     posts = Post.objects.all()
@@ -10,15 +12,29 @@ def blog(request):
     }
     return render(request, 'blog/blog.html', context)
 
+
+@login_required
 def edit_blog(request, post_id):
-    post = get_object_or_404(Post, id=post_id)
-    
+    """ Edit a blog post """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only administrators can do that.')
+        return redirect(reverse('home'))
+
+    post = get_object_or_404(Post, pk=post_id)
     if request.method == 'POST':
-        form = BlogPostForm(request.POST, request.FILES, instance=post)
+        form = PostForm(request.POST, request.FILES, instance=post)
         if form.is_valid():
             form.save()
-            return redirect('blog:blog', post_id=post.id)  # Redirect to detail view
-    else:
-        form = BlogPostForm(instance=post)
+            messages.success(request, 'Successfully updated Blog!')
+            return redirect(reverse('blog', args=[post.id]))  
+        else:
+            messages.error(request, 'Failed to update blog post. Please ensure the form is valid.')
     
-    return render(request, 'edit_blog.html', {'form': form})
+
+    template = 'blog/edit_blog.html'
+    context = {
+        'post': post,
+        'form': PostForm,
+    }
+
+    return render(request, template, context)
