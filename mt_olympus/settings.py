@@ -14,6 +14,8 @@ import os
 import dj_database_url
 
 from pathlib import Path
+if os.path.exists("env.py"):
+  import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -225,4 +227,5 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
-    NOTIFY_EMAIL = ('EMAIL_HOST_USER')
+
+NOTIFY_EMAIL = os.environ.get('NOTIFY_EMAIL', 'notification@example.com')

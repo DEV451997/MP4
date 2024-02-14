@@ -29,7 +29,6 @@ def profile(request):
         'form': form,
         'orders': orders,
         'on_profile_page': True,
-        'wishlist_items': wishlist_items,
     }
 
     return render(request, template, context)
