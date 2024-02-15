@@ -7,7 +7,7 @@ class PostForm(forms.ModelForm):
         model = Post
         fields = '__all__'
 
-    thumbnail = forms.ImageField(label='Thumbnail', required=False,)
+    thumbnail = forms.ImageField(label='Thumbnail')
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
