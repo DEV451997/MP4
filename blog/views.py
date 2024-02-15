@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Post, Category
 from django.contrib.auth.decorators import login_required
 from .forms import PostForm
+from django.contrib import messages
 
 def blog(request):
     posts = Post.objects.all()
@@ -26,15 +27,18 @@ def edit_blog(request, post_id):
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated Blog!')
-            return redirect(reverse('blog', args=[post.id]))  
+            return redirect(reverse('edit_blog', args=[post.id]))  
         else:
             messages.error(request, 'Failed to update blog post. Please ensure the form is valid.')
+    else:
+        form = PostForm(instance=post)
+        messages.info(request, f'You are editing {post.title}')
     
 
     template = 'blog/edit_blog.html'
     context = {
         'post': post,
-        'form': PostForm,
+        'form': form,
     }
 
     return render(request, template, context)
