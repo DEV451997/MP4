@@ -32,15 +32,15 @@
                 <small class="ml-3">
                     <a href="{% url 'edit_blog' post.id %}">Edit</a>
                     <a class="text-danger" href="#" data-toggle="modal"
-                        data-target="#deleteConfirmationModal">Delete</a>
+                        data-target="#deleteConfirmationModal{{ post.id }}">Delete</a>
                 </small>
                 {% endif %}
             </div>
         </div>
 
         <!-- Confirmation Modal -->
-        <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" role="dialog"
-            aria-labelledby="deleteConfirmationModalLabel" aria-hidden="true">
+        <div class="modal fade" id="deleteConfirmationModal{{ post.id }}" tabindex="-1" role="dialog"
+            aria-labelledby="deleteConfirmationModalLabel{{ post.id }}" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">

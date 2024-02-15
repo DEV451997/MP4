@@ -85,7 +85,7 @@
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
                                                     <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                                    <a class="text-danger" href="#" data-toggle="modal" data-target="#deleteProductConfirmationModal{{ product.id }}">Delete</a>
                                                 </small>
                                             {% endif %}
                                         </div>
@@ -93,6 +93,30 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Product Deletion Confirmation Modal -->
+                        <div class="modal fade" id="deleteProductConfirmationModal{{ product.id }}" tabindex="-1" role="dialog"
+                            aria-labelledby="deleteProductConfirmationModalLabel{{ product.id }}" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="deleteProductConfirmationModalLabel{{ product.id }}">Confirm Deletion</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Are you sure you want to delete this product?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-black rounded-0" data-dismiss="modal">Cancel</button>
+                                        <a href="{% url 'delete_product' product.id %}" class="btn btn-danger rounded-0">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                         {% if forloop.counter|divisibleby:1 %}
                             <div class="col-12 d-sm-none mb-5">
                                 <hr>
