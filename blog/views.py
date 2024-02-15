@@ -15,10 +15,36 @@ def blog(request):
 
 
 @login_required
+def blog_post(request):
+    """ Add a blog post """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    if request.method == 'POST':
+        form = PostForm(request.POST, request.FILES)
+        if form.is_valid():
+            product = form.save()
+            messages.success(request, 'Successfully added blog post!')
+            return redirect('blog')
+        else:
+            messages.error(request, 'Failed to add blog post. Please ensure the form is valid.')
+    else:
+        form = PostForm()
+        
+    template = 'blog/blog_post.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
 def edit_blog(request, post_id):
     """ Edit a blog post """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only administrators can do that.')
+        messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
     post = get_object_or_404(Post, pk=post_id)
