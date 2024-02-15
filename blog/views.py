@@ -5,7 +5,7 @@ from .forms import PostForm
 from django.contrib import messages
 
 def blog(request):
-    posts = Post.objects.all()
+    posts = Post.objects.order_by('-featured',)
     categories = Category.objects.all()
     context = {
         'posts': posts,
