@@ -26,7 +26,7 @@
                             <p>{{ post.content|truncatewords:50 }} <a href="#" class="read-more-link"
                                     data-toggle="modal" data-target="#readMoreModal{{ post.id }}">Read More</a></p>
                             {% else %}
-                            <p>{{ post.content }}</p>
+                            <p>{{ post.content | linebreaks }}</p>
                             {% endif %}
                         </div>
                     </div>
@@ -70,14 +70,19 @@
             aria-labelledby="readMoreModalLabel{{ post.id }}" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="readMoreModalLabel{{ post.id }}">{{ post.title }}</h5>
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title" id="readMoreModalLabel{{ post.id }}">
+                            {% if post.featured %}
+                            <p class="text-warning font-weight-bold">Featured Post</p>
+                            {% endif %}
+                            {{ post.title }}
+                        </h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        {{ post.content }}
+                        {{ post.content | linebreaks }}
                     </div>
                 </div>
             </div>
