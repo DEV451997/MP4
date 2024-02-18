@@ -12,6 +12,7 @@
                     <p class="text-warning font-weight-bold">Featured Post</p>
                     {% endif %}
                     <h2 class="mb-0">{{ post.title }}</h2>
+                    {{ post.slug }}
                 </div>
                 <div class="card-footer bg-white pt-0 border-0 text-left">
                     <div class="row">
@@ -83,6 +84,7 @@
                     </div>
                     <div class="modal-body">
                         {{ post.content | linebreaks }}
+                        {{post.author}}
                     </div>
                 </div>
             </div>
