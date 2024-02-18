@@ -19,3 +19,12 @@ class ProductForm(forms.ModelForm):
         self.fields['category'].choices = friendly_names
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-0'
+
+    def clean_rating(self):
+        rating = self.cleaned_data.get('rating')
+
+        # Ensure the rating is within the range of 1 to 5
+        if rating is not None and (rating < 1 or rating > 5):
+            raise forms.ValidationError('Rating must be between 1 and 5.')
+
+        return rating
