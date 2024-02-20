@@ -42,11 +42,39 @@ The project Superuser has the ability to amend products and blog posts directly 
 
 ### Structure
 
+A well-structured layout is integral to the project's design. Main navigation is prevelant on all screen sizes. Thus allowing seamless navigation to all areas of the site. Whether a user logged in, a user who hasn't registered or the site admin. The site provides navigation to the sections relevant to the applicable user.
+
 ## What is Mt.Olympus
+
+Mt. Olympus isn’t just a mythical peak—it’s a thriving e-commerce haven! Imagine a place where users can ascend to new heights in style and wellness. Here’s the scoop:
+
+1. Fashion Summit: At Mt. Olympus, shoppers can explore a wardrobe fit for gods and goddesses. From trendy clothing to timeless classics, we’ve got it all. Whether it’s Zeus-approved hoodies or Athena-inspired activewear, our virtual shelves are brimming with fashion treasures.
+2. Supplement Sanctuary: But wait, there’s more! Our wellness section is like a sacred grove. Users can discover potent elixirs—protein powders, vitamins, and herbal blends—that fuel their inner demigod. It’s all about strength, vitality, and that immortal glow.
+3. Shopping Altar: Expect the essentials: user-friendly navigation, product details, and a seamless checkout experience. Our shopping cart is like a chariot—swift and reliable. And yes, we accept offerings via Stripe for a divine transaction.
+4. Oracle of Blog Posts: Stay in the loop with our blog. From supplements and events to celestial style guides, our posts are like scrolls from the gods themselves. Users can ascend to enlightenment while sipping their morning ambrosia.
+So, whether you’re scaling the peaks of fashion or seeking wellness wisdom, Mt. Olympus awaits. 🏔️✨
 
 ## Project Goals
 
+### User Accounts and Personalization:
+* I will implement user account functionality. Users can create accounts, log in, and store personal information securely. 
+### E-Commerce Experience:
+* Shoppers will have a seamless experience. They can explore Mt. Olympus, add products to their baskets, and proceed to checkout. It’s all about making shopping divine.
+### Blog Insights:
+* The blog section will be a window into the world of Mt. Olympus. Users can stay updated on events, trends, and celestial musings. 
+### User Authentication and Security:
+* Implement robust user authentication to ensure a secure and personalized experience for our community members, safeguarding their profiles and interactions.
+### User-Friendly CRUD Functionality: 
+* Develop an intuitive and user-friendly interface for CRUD operations for the admin/superuser, making it easy to CRUD products and blog posts.
+
 ## User Goals
+
+Mt. Olympus  is designed with our users in mind, aiming to provide an enriching and enjoyable experience. Here are the key user goals we strive to fulfill:
+
+* Search Products: Whether navigating the site manually or using the search bar. Users can find and filter products with ease.
+* Secure Checkout
+* Stay in the know with the Blog.
+* Find Inspiration
 
 ## Research
 
