@@ -18,7 +18,7 @@ My project will contain the following:
 * My project will be organized into multiple apps. Each app will handle a potentially reusable component. 
 * I’ll put some serious thought into designing my database schema. Relationships between entities will be carefully considered.
 * I’ll implement an authentication mechanism. Users will register and log in for a good reason—like keeping their shopping cart intact between sessions.
-* I’ll create forms with validation. Users can create and edit models in the backend. It’s all about making the user experience smooth.
+* I’ll create forms with validation. The Superuser can create and edit models in the backend. It’s all about making the user experience smooth.
 * One of my Django apps will handle e-commerce functionality using Stripe. 
 * My website will be well-organized, with clear navigation paths. No one wants to get lost in a digital maze!
 
