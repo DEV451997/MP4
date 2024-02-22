@@ -210,6 +210,24 @@ In regards to research I looked into e-commerce stores which provide the ability
 
 ## Profile/Register/Log in - Log out
 
+1. Initial User Interaction
+* Upon the user’s first visit to the site, they encounter two primary options under the “My Account” section: Register and Login.
+* These options serve as gateways for users to create an account or access an existing one.
+2. Register Page
+* Navigating to the Register Page, users find a straightforward form.
+* If the user already has an account, they can easily switch to the login page using the text link: “Already have an account? Then please sign in.”
+* Alternatively, the “Back to Login” button provides a direct route to the login page.
+3. Registration Process
+* Users fill out the registration form, providing necessary details.
+* After clicking “Sign Up,” they are directed to the Confirm Email Page.
+* Here, users verify their email address, completing the registration process.
+4. Form Validation 
+* Form validation ensures that all required fields are filled out.
+* If a user enters an email address that is already registered, a prompt informs them that an account exists and encourages them to log in.
+5. User Experience and Security
+* The seamless flow from registration to email confirmation enhances user experience.
+* Security measures, such as email verification, protect user accounts.
+
 ## Bag
 
 ## Toasts
