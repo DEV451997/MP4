@@ -78,11 +78,48 @@ Mt. Olympus  is designed with our users in mind, aiming to provide an enriching 
 
 ## Research
 
-|  |  |  |
+In regards to research I looked into e-commerce stores which provide the ability to search and purchase products.
+
+| [Asos](https://www.asos.com/) | [Nike](https://Nike.com) | [Lacoste](https://www.lacoste.com/) |
 
 ### Key Takeaways
 
+* Navigation: Mt.Olympus must allow users to seamlessly navigate to all sections of the website on any device.
+* Visually appealing: Mt.Olympus must showcase all information/products in a uniform manner. With access to all information clearly visible and easy to read.
+* Responsiveness: The site must work on all devices. Information must be formatted correctly on all sizes, prioritising mobile first design.
+* Functionality: All actions must result in it's intended purpose.
+
 # Features
+
+## Main Navigation/Landing Page
+
+1. Landing Page 
+* The landing page serves as the central hub for users, providing comprehensive information about the site’s offerings, guiding visitors toward relevant sections and features.
+2. Navigation and User Experience
+* Mt. Olympus functions as a “Return to Home” link on screen sizes above tablet or 768px.
+* Dropdown menus elegantly organize content, ensuring easy access to relevant pages.
+* A user-friendly search bar empowers visitors to find specific products or keywords efficiently.
+* The Shop Now button takes users straight to the products page acting as anpther way to access relevant pages.
+3. User Account Management
+* Links to the shopping basket and user accounts enhance convenience.
+* The “My Account” section dynamically adjusts based on user status (registered, signed in, superuser, or regular user).
+
+
+## Products Page
+
+## Clothing Page 
+
+## Supplements Page
+
+## Blog
+
+## Contact Form
+
+## Product/Blog Management 
+
+## Profile/Register/Log in - Log out
+
+
 
 ## User Stories
 
