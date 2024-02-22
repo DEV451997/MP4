@@ -72,9 +72,9 @@ So, whether you’re scaling the peaks of fashion or seeking wellness wisdom, Mt
 Mt. Olympus  is designed with our users in mind, aiming to provide an enriching and enjoyable experience. Here are the key user goals we strive to fulfill:
 
 * Search Products: Whether navigating the site manually or using the search bar. Users can find and filter products with ease.
-* Secure Checkout
-* Stay in the know with the Blog.
-* Find Inspiration
+* Secure Checkout: Be able to checkout ensuring security and peace of mind during transactions.
+* Stay in the know with the Blog: Get up to date/featured news, trends and insights.
+* Find Inspiration: Outfits, Supplements and an array of fitness related content.
 
 ## Research
 
@@ -103,7 +103,6 @@ In regards to research I looked into e-commerce stores which provide the ability
 3. User Account Management
 * Links to the shopping basket and user accounts enhance convenience.
 * The “My Account” section dynamically adjusts based on user status (registered, signed in, superuser, or regular user).
-
 
 ## Products Page
 
