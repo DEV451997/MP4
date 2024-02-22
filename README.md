@@ -104,11 +104,36 @@ In regards to research I looked into e-commerce stores which provide the ability
 * Links to the shopping basket and user accounts enhance convenience.
 * The “My Account” section dynamically adjusts based on user status (registered, signed in, superuser, or regular user).
 
-## Products Page
+## Product Pages
 
-## Clothing Page 
+1. Product Overview
+* The product page serves as a comprehensive catalog, displaying all available products within the store.
+* Users can easily browse through the entire inventory.
+* An overall product count provides transparency and context.
+2. Sorting and Filtering 
+* Users can refine their search by utilizing the sort-by feature.
+* Multiple categories allow efficient filtering based on specific criteria (e.g., price, rating, category).
+3. Enhanced User Experience 
+* The inclusion of a “back to top” arrow enhances usability, especially for mobile users.
+* Users no longer need to manually scroll to the top, resulting in a smoother navigation experience.
 
-## Supplements Page
+### Product Detail
+
+1. Individual Product Details
+* Clicking on a specific product reveals an expanded view.
+* Users gain access to detailed information about the product, including specifications, features, and any relevant descriptions.
+* Clear calls-to-action, “add to bag” or “keep shopping,” guide users seamlessly through the store.
+
+### Edit/Delete Product
+
+1. Superuser/Admin Privileges
+* Superusers and administrators enjoy additional functionality.
+* Edit button provides direct access to edit product page.
+* Clicking the delete button triggers a modal confirmation, ensuring intentional actions.
+
+## Clothing Pages
+
+## Supplements Pages
 
 ## Blog
 
@@ -118,7 +143,7 @@ In regards to research I looked into e-commerce stores which provide the ability
 
 ## Profile/Register/Log in - Log out
 
-
+## Bag
 
 ## User Stories
 
