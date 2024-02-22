@@ -178,11 +178,24 @@ In regards to research I looked into e-commerce stores which provide the ability
 
 ## Contact Form
 
+1. Purpose and Accessibility
+* The Contact Us link is prominently displayed across all pages, ensuring easy access for users.
+* It serves as a direct channel for users to seek information and ask questions.
+2. Consistent Styling
+* The design of the contact form maintains uniformity with other forms on the site.
+3. Form Fields:
+    * Email: Users provide their email address for communication.
+    * Subject: A concise summary of the inquiry or message.
+    * Message: The main content of the communication.
+* The form enforces completion of all fields; any missing information triggers an alert prompting users to fill out the required details.
+
 ## Product/Blog Management 
 
 ## Profile/Register/Log in - Log out
 
 ## Bag
+
+## Toasts
 
 ## User Stories
 
