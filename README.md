@@ -155,6 +155,27 @@ In regards to research I looked into e-commerce stores which provide the ability
 
 ## Blog
 
+1. Content Overview 
+* The Blog section serves as an informative platform, offering detailed posts related to Mt. Olympus events, supplements, and clothing.
+* Each blog post includes essential components:
+    * Title: Clearly explains the topic of the post.
+    * Slug: Identifies whether the post pertains to an event, supplement, or clothing.
+    * Brief Overview: Provides a concise introduction to the content.
+    * Main Content: Expansion upon the overview.
+    * Thumbnail: Visual representation accompanying the post.
+    * Author Attribution: Credits the author upon user interaction (clicking to read more).
+    * Featured Checkbox: When checked, posts will display "Featured Post" and be ordered by featured posts first.
+2. Content Management
+* To maintain consistency and readability, blog post content is truncated using Django’s {{post.content|truncatewords:50}}.
+* This ensures that blog posts do not exceed 50 words, creating a uniform appearance.
+3. Enhanced Readability
+* A modal with a “Read More” link allows users to access the complete blog post content.
+* Django’s {{ post.content | linebreaks }} ensures legibility by formatting the text appropriately.
+4. Superuser Capabilties
+* Superusers have access to edit and delete buttons, mirroring the functionality seen in product pages.
+5. Enhanced User Experience
+* The inclusion of a “back to top” arrow maintains consistency across pages, enhancing navigation.
+
 ## Contact Form
 
 ## Product/Blog Management 
