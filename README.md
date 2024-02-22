@@ -143,9 +143,15 @@ In regards to research I looked into e-commerce stores which provide the ability
 * Users will find familiar features and functionality.
 3. Superuser Capabilties
 * Superusers benefit from the same level of control and management.
- Edit and delete actions are consistent across all product sections.
+* Edit and delete actions are consistent across all product sections.
 
 ## Supplements Pages
+
+1. Purpose and Functionality
+* Similar to the clothing section, the Supplements Pages offer a specialized view for products related to supplements. Just like before, users can utilize the convenient filter at the top to narrow down their search within specific supplement categories. Whether exploring snacks or protein powders, this consistent approach ensures an efficient and user-friendly experience.
+2. Superuser Capabilties
+* Superusers benefit from the same level of control and management.
+* Edit and delete actions are consistent across all product sections.
 
 ## Blog
 
