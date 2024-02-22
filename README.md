@@ -191,6 +191,23 @@ In regards to research I looked into e-commerce stores which provide the ability
 
 ## Product/Blog Management 
 
+1. Purpose and Functionality
+* The Product/Blog Management pages serve a crucial role in content administration.
+* These pages are accessible only to superusers, ensuring control over product and blog-related posts.
+2. Unified Form Design
+* The visual consistency of the forms reinforces a cohesive user experience.
+* Whether adding a new product or creating a blog post, superusers encounter familiar styling.
+3. Adding New Content
+* Superusers utilize these forms to add fresh content to the platform.
+* For products, relevant fields (such as title, description, price, etc.) are pulled from the forms.py file.
+* Similarly, blog posts benefit from consistent data entry.
+4. Access and Location 
+* These management pages are discreetly placed under the “My Account” dropdown.
+* Superusers can efficiently navigate to perform necessary tasks.
+5. Django Crispy Forms
+* The form creation process leverages Django Crispy Forms, ensuring clean and organized layouts.
+* Superusers can confidently manage content without technical hurdles. 
+
 ## Profile/Register/Log in - Log out
 
 ## Bag
