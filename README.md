@@ -458,8 +458,10 @@ Used to store the project code after being created in GitPod / Git.
 Used to create, edit & preview the project's code.
 * [Heroku](https://www.heroku.com/)
 Used to deploy the finished website.
-* [ElephantSQL]()
-* [AWS S3]()
+* [ElephantSQL](https://www.elephantsql.com/)
+Used to store site data.
+* [AWS S3](https://aws.amazon.com/s3/)
+Used to store media files used for Mt.Olympus.
 
 
 # Testing
@@ -507,8 +509,26 @@ The site was tested on the following devices:
 * Each subsequent push to the branch, the application on Heroku updated, maintaining synchronization with the latest codebase.
 
 ### Step by step guide for ElephantSQL
+* Access ElephantSQL dashboard.
+* Create a new instance giving it a name and chossing Tiny Turtle Plan.
 
 ### Step by step guide for AWS S3
+* 
+
+### ### Step by step guide for Stripe
+* 
+
+
+### Issues/Solutions to coding problems.
+
+1. Bag decrement issue.
+2. 
+
+
 
 ## Credits
+* Credits go to Code Institute for providing a detailed walkthrough to Django and it's capabilities. Providing links to Django documentation to build and understand how a web application can easily be built, linking views, urls etc.
+* I also used an online tutorial as the basis for the [Contact Form](https://learndjango.com/tutorials/django-email-contact-form-tutorial). This taught me how to set up the forms.py and link the relevant views and urls to create a contact form which, when submitted it succesfully shown to the terminal.
+* For the [Blog](https://realpython.com/build-a-blog-from-scratch-django/)I use this site as a refernece. This gave me the basic structure and functionailty. I then expanded on the Blog using the products app adding Django features such as {{ post.content | linebreaks }} and {{ post.content|truncatewords:50 }} to aid readability and create a uniform layout. 
+* Product images were created by using prompts via [Leonardo.Ai](https://leonardo.ai/). This allowed me to create copyright free imagery for my site.
 
