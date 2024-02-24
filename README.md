@@ -531,4 +531,3 @@ The site was tested on the following devices:
 * I also used an online tutorial as the basis for the [Contact Form](https://learndjango.com/tutorials/django-email-contact-form-tutorial). This taught me how to set up the forms.py and link the relevant views and urls to create a contact form which, when submitted it succesfully shown to the terminal.
 * For the [Blog](https://realpython.com/build-a-blog-from-scratch-django/)I use this site as a refernece. This gave me the basic structure and functionailty. I then expanded on the Blog using the products app adding Django features such as {{ post.content | linebreaks }} and {{ post.content|truncatewords:50 }} to aid readability and create a uniform layout. 
 * Product images were created by using prompts via [Leonardo.Ai](https://leonardo.ai/). This allowed me to create copyright free imagery for my site.
-
