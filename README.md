@@ -275,6 +275,27 @@ In regards to research I looked into e-commerce stores which provide the ability
 
 ## Bag
 
+1. Product Aggregator
+* The shopping bag diligently collects all the items you add to your basket.
+* It holds crucial information about each product.
+2. Quantity Management
+* Within the bag, you’ll find a convenient quantity tab for each item.
+* Users can easily update quantities directly in the basket.
+* Whether adding more or reducing quantities, a simple click on the update button ensures accurate adjustments.
+* A handy pop-up confirms the changes, keeping you informed about the updated bag contents.
+3. Item Removal Option
+* Users have the flexibility to remove items from their basket.
+* A straightforward remove button ensures a clutter-free shopping experience.
+4. Checkout
+* When you’re ready to proceed, two options await:
+    * “Secure Checkout”: This leads you to the next step, where you provide essential details for a smooth transaction.
+    * “Keep Shopping”: If you want to explore more, this button keeps your bag intact while you continue browsing.
+5. Secure Checkout Process
+* Users are prompted to fill out essential fields such as name, email, and delivery address.
+* If any adjustments are needed, the “Adjust Bag” link allows you to return to the bag page.
+* For registered users, pre-filled information speeds up the process.
+* Finally, when it’s time to pay, Stripe handles the payment securely.
+
 ## Toasts
 
 ## User Stories
