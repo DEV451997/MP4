@@ -210,6 +210,8 @@ In regards to research I looked into e-commerce stores which provide the ability
 
 ## Profile/Register/Log in - Log out
 
+### Register
+
 1. Initial User Interaction
 * Upon the user’s first visit to the site, they encounter two primary options under the “My Account” section: Register and Login.
 * These options serve as gateways for users to create an account or access an existing one.
@@ -227,6 +229,49 @@ In regards to research I looked into e-commerce stores which provide the ability
 5. User Experience and Security
 * The seamless flow from registration to email confirmation enhances user experience.
 * Security measures, such as email verification, protect user accounts.
+
+### Log In
+
+1. Purpose and Context
+* The Log In page serves as a gateway for users who already have profiles.
+* It provides access to their accounts, allowing them to interact with personalized features.
+2. User Interaction
+* Users are prompted to fill in their email address and password.
+* Clear instructions guide them through the process.
+* Buttons for “Return to Home” and “Sign In” facilitate navigation.
+3. Account Creation Reminder
+* or users who haven’t created an account yet, a helpful message appears:
+    * "If you have not created an account yet, then please sign up first."
+* This encourages new users to register before attempting to log in.
+4. Password Recovery Option
+* A “Forgot Password?” link provides a convenient way for users to reset their password.
+* Clicking this link directs them to the Forgot Password Page, where they can initiate the recovery process.
+
+### Log Out
+
+1. Clear Purpose
+* The Log Out feature performs exactly as its name suggests: it allows users to sign out of their accounts.
+* It ensures that users can securely end their session when they no longer need access.
+2. User Interface Changes
+* After logging in, the options under “My Account” shift to My Profile and Logout.
+3. Logout Process
+* When users click Logout, they are directed to a confirmation page:
+    * Sign Out: This action immediately logs them out.
+    * Cancel: If they change their mind, clicking this button returns them to the home page.
+
+## Profile
+
+1. Access and Purpose
+* Upon registering or logging in, users gain access to their personalized profile page.
+* is page serves as a central hub for managing account-related information.
+2. Delivery Information Update
+* Users can conveniently update their delivery information directly on this page.
+* Any changes made here will automatically populate the relevant fields during the checkout process.
+* This streamlines the checkout experience, making it faster and more efficient.
+3. Order History
+* The profile page displays a comprehensive order history.
+* Users can review details of their previous orders, including items purchased, dates, and order totals.
+* Clicking on a specific order provides additional information, order details and address.
 
 ## Bag
 
