@@ -403,11 +403,45 @@ In regards to research I looked into e-commerce stores which provide the ability
 
 ## Future Features
 
+Future features I plan to include are:
+* Comment section for Blog Posts and products.
+    * Thus enhancing user experience and building a community around the brand.
+    * Also allowing new users to get a feel for products before they purchase.
+* Wishlist or Favorites:
+    * Allow users to create a wishlist or mark favorite products.
+    * sers can save items they’re interested in for future reference.
+
 # Design and Structure
 
 ## Structure
 
+1. Landing page:
+* The landing page serves as the initial entry point for users. It provides an overview of Mt. Olympus, introducing the brand and key offerings.
+2. Product Pages:
+* These pages showcase the range of products available on Mt. Olympus. Users can explore clothing items and supplements. Each product listing includes relevant details (name, price, image).
+3. User Profile Page
+* Upon registration or login, users gain access to their personalized profile page. Here, they can manage account details, including delivery information and order history.
+4. Contact Form 
+* The contact form allows users to reach out to Mt. Olympus with inquiries, questions, or feedback. Users can provide their email, subject, and message.
+5. Blog Posts
+* The blog section features informative posts related to Mt. Olympus events, products, and lifestyle. Users can read articles.
+6. Authentication and Checkout
+* Authentication pages handle user registration, login, and logout. The checkout process guides users through secure payment and order placement.
+
 ### Colors
+
+1. Black:
+    * Black is a powerful and timeless color. It conveys sophistication, elegance, and authority.
+    * By using black as a dominant color, you create a strong visual impact.
+    * In the context of Mt. Olympus, black provides a sleek and modern aesthetic.
+2. White: 
+    * White serves as an excellent contrast to black. It represents purity, simplicity, and cleanliness.
+    * White backgrounds enhance readability, allowing product images and blog posts to stand out.
+    * he combination of black and white creates a classic and minimalist look.
+3. Contrast and Focus:
+    * By keeping the main content areas (products, blog posts) in black on a white background, you ensure that users’ attention is drawn to these crucial sections. The high contrast aids readability and visual hierarchy.
+
+Black and White were the mian colors used. These provide great contrast and aid readbailtiy. This also allows product images and blog posts to pop. These are the main areas users will be spending their time so making them the centre of attention was our priotity.
 
 <img src="">
 <img src="">
