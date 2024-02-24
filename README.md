@@ -314,11 +314,26 @@ In regards to research I looked into e-commerce stores which provide the ability
 
 ## User Stories
 
+1. User Registration
+* As a user, I want the option to register for a profile. I expect this registration process to streamline my future interactions on the site.
+2. Product Exploration
+* As a user, I want to browse a variety of products. I need detailed information about each product to make informed decisions.
+3. Efficient Navigation and Search
+* I expect easy navigation throughout the site. A robust search capability will help me find specific products quickly.
+4. Bag Management 
+* As a user, I want to add, update, and remove products from my basket. A smooth experience ensures efficient shopping.
+5. Contact and Support
+* I want the ability to contact Mt. Olympus with any questions or inquiries. Clear communication channels are essential.
+6. Seamless Checkout Process
+* I expect a smooth checkout process when making a purchase. Clear steps and secure handling of my information are crucial.
+7. Stay Informed
+* I want to stay up to date with events, promotions, and news related to Mt. Olympus. Regular updates keep me engaged and informed.
+
 ## User Story Testing
 
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
-|  | |  |
+|  User registration form. | Users can create an account by providing their email, password, and other relevant details. | User fills out the registration form. Clicks the “Sign Up” button. User then confirms emails. Can now log in using the registered credentials. |
 
 <details><summary>Screen Recording</summary>
 
@@ -328,7 +343,7 @@ In regards to research I looked into e-commerce stores which provide the ability
 
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
-|  |  |  |
+| Product Exploration | View a list of products with relevant details (name, price, image). | User navigates to the product listing page. User clicks on a product to view its details. User is provided all the relevant information.|
 
 <details><summary>Screen Recording</summary>
 
@@ -338,7 +353,7 @@ In regards to research I looked into e-commerce stores which provide the ability
 
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
-|  |  |  |
+| Efficient Navigation and Search | I expect items to be filtered down to my search results or shown in a way I have filtered. | Navigate to products page and use the search bar. Products matching that word will be shown below. Items filtered using the sort-by feature will be shown depending on the filter the user has clicked. |
 
 <details><summary>Screen Recording</summary>
 
@@ -348,7 +363,7 @@ In regards to research I looked into e-commerce stores which provide the ability
 
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
-|  |  |  |
+| Bag Management  | Items added to basket to be shown within the bag with all relevant information, especially quantities. | Items added to the bag via "add to bag" are shown in the order they were added, along with quantities and the abilty to update or remove. |
 
 <details><summary>Screen Recording</summary>
 
@@ -358,7 +373,27 @@ In regards to research I looked into e-commerce stores which provide the ability
 
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
-|  |   |  |
+| Contact and Support |  I expect a contact form to be provided for any queries I may have. | Contact Us. Is prevelant across all pages. Upon clicking contact us the user is prompted to fill in the form, where a toast will display, saying their message was succesfully sent. |
+
+<details><summary>Screen Recording</summary>
+
+<img src="">
+
+</details>
+
+| **Feature** | **Expect** | **Action/Result** | 
+| -------- | -------- | -------- |
+| Seamless Checkout Process | I expect an easy, streamlined checkout process. | If a user has a profile the checkout form will mostly be pre filled, streamlining the process. The information needs to be filled out along with a card to submit payment. Once submitted payment is taken and the order is placed. |
+
+<details><summary>Screen Recording</summary>
+
+<img src="">
+
+</details>
+
+| **Feature** | **Expect** | **Action/Result** | 
+| -------- | -------- | -------- |
+| Blog | I expect to be kept upto date with information regarding Mt. Olympus. | Navigating to the Blog page, users are displayed with posts regarding Mt.Olmypus. |
 
 <details><summary>Screen Recording</summary>
 
