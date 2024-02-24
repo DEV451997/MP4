@@ -298,6 +298,20 @@ In regards to research I looked into e-commerce stores which provide the ability
 
 ## Toasts
 
+1. Purpose and Context
+* Toasts serve as unobtrusive notifications.
+* They appear at the top of the screen, to inform users about actions they’ve taken or system responses.
+2. User Actions
+* Actions such as logging in or out.
+* Adding items to the bag.
+* Sucess toasts.
+* Superuser toasts for editing products etc.
+3. User-Centric Approach
+* Toasts prioritize user awareness and feedback.
+* They create a sense of accomplishment (e.g., successful login) or provide essential information (e.g., order confirmation).
+4. Examples
+<img src="">
+
 ## User Stories
 
 ## User Story Testing
