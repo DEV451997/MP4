@@ -504,71 +504,29 @@ These are just a few examples of the many toats that await when performing actio
 | -------- | -------- | -------- |
 |  User registration form. | Users can create an account by providing their email, password, and other relevant details. | User fills out the registration form. Clicks the “Sign Up” button. User then confirms emails. Can now log in using the registered credentials. |
 
-<details><summary>Screen Recording</summary>
-
-<img src="">
-
-</details>
-
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
 | Product Exploration | View a list of products with relevant details (name, price, image). | User navigates to the product listing page. User clicks on a product to view its details. User is provided all the relevant information.|
-
-<details><summary>Screen Recording</summary>
-
-<img src="">
-
-</details>
 
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
 | Efficient Navigation and Search | I expect items to be filtered down to my search results or shown in a way I have filtered. | Navigate to products page and use the search bar. Products matching that word will be shown below. Items filtered using the sort-by feature will be shown depending on the filter the user has clicked. |
 
-<details><summary>Screen Recording</summary>
-
-<img src="">
-
-</details>
-
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
 | Bag Management  | Items added to basket to be shown within the bag with all relevant information, especially quantities. | Items added to the bag via "add to bag" are shown in the order they were added, along with quantities and the abilty to update or remove. |
-
-<details><summary>Screen Recording</summary>
-
-<img src="">
-
-</details>
 
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
 | Contact and Support |  I expect a contact form to be provided for any queries I may have. | Contact Us. Is prevelant across all pages. Upon clicking contact us the user is prompted to fill in the form, where a toast will display, saying their message was succesfully sent. |
 
-<details><summary>Screen Recording</summary>
-
-<img src="">
-
-</details>
-
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
 | Seamless Checkout Process | I expect an easy, streamlined checkout process. | If a user has a profile the checkout form will mostly be pre filled, streamlining the process. The information needs to be filled out along with a card to submit payment. Once submitted payment is taken and the order is placed. |
 
-<details><summary>Screen Recording</summary>
-
-<img src="">
-
-</details>
-
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
 | Blog | I expect to be kept upto date with information regarding Mt. Olympus. | Navigating to the Blog page, users are displayed with posts regarding Mt.Olmypus. |
-
-<details><summary>Screen Recording</summary>
-
-<img src="">
-
-</details>
 
 ## Future Features
 
@@ -612,9 +570,6 @@ Future features I plan to include are:
 
 Black and White were the mian colors used. These provide great contrast and aid readbailtiy. This also allows product images and blog posts to pop. These are the main areas users will be spending their time so making them the centre of attention was our priotity.
 
-<img src="">
-<img src="">
-
 ### Languages Used
 
 ### Tools
@@ -638,22 +593,23 @@ Used to store media files used for Mt.Olympus.
 ## HTML Validation
 
 [HTML Validator](https://validator.w3.org/) The HTML pages were run through a HTML Validator.
-<details><summary>HTML</summary><img src=""></details>
+All HTML was put through the above validator, with Django being removed where applicable and tested. Git push were performed when files were being commented upon and validated.
 
 ## CSS Validation
 
 [CSS Validator](https://jigsaw.w3.org/css-validator/) The CSS page was run through a CSS Validator.
-<details><summary>Stylesheet</summary><img src=""></details>
+All CSS was put through the above validator. Git push were performed when files were being commented upon and validated.
 
 ## Javascript Validation
 
 [Javascript Validator](https://jshint.com/) The Javascript page was run through jshint.
-<details><summary>JS</summary><img src=""></details>
+All JS was put through the above validator. Git push were performed when files were being commented upon and validated.
+
 
 ## Python Validation
 
 [Python Validator](https://pep8ci.herokuapp.com/) The Python page was run through pep8 validator.
-<details><summary>Python</summary><img src=""></details>
+All Python was put through the above validator. Git push were performed when files were being commented upon and validated. All files were made PEP8 compliant, making sure functionality remained.
 
 ## Responsiveness
 
@@ -663,8 +619,6 @@ The site was tested on the following devices:
 * Samsung S20
 * Acer Chromebook 14"
 * Google Developer tools. Utilizing all dimensions including the responsive option.
-
-<details><summary>Dev Tools</summary><img src=""></details>
 
 ## Deployment
 
@@ -677,23 +631,46 @@ The site was tested on the following devices:
 * I further enhanced the deployment process by configuring automatic deploys directly from my GitHub repository, by pushing requirements.txt and the Procfile.
 * Each subsequent push to the branch, the application on Heroku updated, maintaining synchronization with the latest codebase.
 
-### Step by step guide for ElephantSQL
-* Access ElephantSQL dashboard.
-* Create a new instance giving it a name and chossing Tiny Turtle Plan.
-
-### Step by step guide for AWS S3
-* 
-
-### ### Step by step guide for Stripe
-* 
-
-
 ### Issues/Solutions to coding problems.
 
-1. Bag decrement issue.
-2. 
+1. Bag Refactor:
 
+* During the process of refactoring the bag component for smaller screen sizes, I encountered a significant issue. While the refactor successfully resolved side-scrolling problems on mobile screens, it inadvertently introduced a functionality issue related to bag item decrements on larger screens.
 
+* My initial attempt involved changing the quantity form IDs to classes and refactoring the JavaScript code accordingly. Unfortunately, this approach did not yield the desired results. Next, I implemented a custom quantity input script specifically for the bag app, but this also failed to address the issue.
+
+* Seeking assistance from tutor support proved unfruitful, and my inquiries to classmates and group tutors via Slack went unanswered. Even after experimenting with additional adjustments, such as adding Bootstrap classes and applying CSS, the functionality issue persisted.
+
+* Ultimately, I made an executive decision to prioritize functionality over visual perfection and retained the existing behavior, despite the remaining visual bug.
+
+2. Connecting db.sqlite3 to ElephantSQL
+
+* I Created a file named env.py in the root directory of my project. This is the file I defined my environment variables.
+* Added env.py to gitignore to stop it pushing sensitive data to GitHub.
+ 
+* At the top of the env.py  file, I imported os so I could set the environment variables in the operating system. Once I added the line “import os” underneath I assigned my environment variables using the following syntax: 
+    * bos.environ["Variable Name Here"] = "Value of Variable Goes Here" 
+    * Example: os.environ["SECRET_KEY"] = "ohsosecret" 
+* Then the following code imports this new env.py file where I used my environment variables. 
+* After adding this under your other imports at the top of the file: 
+    * import os
+    * if os.path.exists("env.py"):
+    * import env 
+* The if statement here is so that the env.py file is only pulled when working on your code in your workspace, not when it is deployed on heroku. 
+* For deployment I set my environment variables in the heroku dashboard in settings > config vars.
+* Now that my environment variables have been set in my env.py file, and the file has been imported into my project, I used them as needed using the following syntax: 
+    * SECRET_KEY = os.environ.get('SECRET_KEY')
+* Next I ran migrations. 
+* To transfer from db.sqlite3 to ElephantSQL I run backup:
+
+    * python3 manage.py dumpdata --exclude auth.permission --exclude contenttypes > elephantsql.json 
+    * commented out DATABASE_URL in env.py and ran
+    * python3 manage.py dumpdata --exclude auth.permission --exclude contenttypes > sqlite.json
+    * next I uncommented DATABASE_URL and ran
+    * python3 manage.py loaddata sqlite.json which had a problem installing the fixture. To resolve this I reset my elephantSQL database.
+    * Then I run python manage.py migrate then python3 manage.py loaddata sqlite.json
+
+* Which led to another issue where I had to remove the admin logs from the json file to which I recieved Installed 43 object(s) from 1 fixture(s). Thus connecting my databases.
 
 ## Credits
 * Credits go to Code Institute for providing a detailed walkthrough to Django and it's capabilities. Providing links to Django documentation to build and understand how a web application can easily be built, linking views, urls etc.
