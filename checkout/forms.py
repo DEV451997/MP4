@@ -2,6 +2,7 @@ from django import forms
 from .models import Order
 
 
+# Form for the Order model
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
@@ -27,6 +28,7 @@ class OrderForm(forms.ModelForm):
             'county': 'County, State or Locality',
         }
 
+        # Set autofocus on the 'full_name' field
         self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if field != 'country':
