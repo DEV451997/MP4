@@ -3,6 +3,7 @@
 {% load bag_tools %}
 
 {% block page_header %}
+    <!-- Header section -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -16,6 +17,7 @@
         <div class="row">
             <div class="col">
                 <hr>
+                <!-- Shopping Bag Title -->
                 <h2 class="logo-font mb-4">Shopping Bag</h2>
                 <hr>
             </div>
@@ -24,9 +26,11 @@
         <div class="row">
             <div class="col">
                 {% if bag_items %}
+                    <!-- Displaying bag items in a table -->
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless">
                             <thead class="text-black">
+                                <!-- Table headers -->
                                 <tr>
                                     <th scope="col">Product Info</th>
                                     <th scope="col"></th>
@@ -37,8 +41,10 @@
                             </thead>
 
                             {% for item in bag_items %}
+                                <!-- Table rows for each bag item -->
                                 <tr>
                                     <td class="p-3 w-25">
+                                         <!-- Displaying product image or a default image if not available -->
                                         {% if item.product.image %}
                                         <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                         {% else %}
@@ -46,14 +52,18 @@
                                         {% endif %}
                                     </td>
                                     <td class="py-3">
+                                        <!-- Displaying product information -->
                                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                                         <p class="my-0"><strong>Size: </strong>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
                                     <td class="py-3">
+                                        <!-- Displaying product price -->
                                         <p class="my-0">${{ item.product.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
+                                         <!-- Form for updating item quantity -->
+                                        <!-- Increment and decrement buttons with associated form -->
                                         <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                             {% csrf_token %}
                                             <div class="form-group">
@@ -88,12 +98,14 @@
                                         <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3">
+                                        <!-- Displaying item subtotal -->
                                         <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
+                                    <!-- Displaying bag total, delivery, and grand total -->
                                     <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
                                     <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
                                     <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
@@ -105,6 +117,7 @@
                                 </td>
                             </tr>
                             <tr>
+                                <!-- Keep Shopping and Secure Checkout buttons -->
                                 <td colspan="5" class="text-right">
                                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                                         <span class="icon">
@@ -123,6 +136,7 @@
                         </table>
                     </div>
                 {% else %}
+                    <!-- Display message when bag is empty -->
                     <p class="lead mb-5">Your bag is empty.</p>
                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                         <span class="icon">

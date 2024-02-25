@@ -1,6 +1,8 @@
+# Importing the necessary module and views from the current app
 from django.urls import path
 from . import views
 
+# List of URL patterns for the 'bag' app
 urlpatterns = [
     path('', views.view_bag, name='view_bag'),
     path('add/<item_id>/', views.add_to_bag, name='add_to_bag'),
