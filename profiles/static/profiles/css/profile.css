@@ -1,21 +1,26 @@
+/* Set maximum height and enable vertical scrollbar for the order history container */
 .order-history {
     max-height: 416px; /* height of profile form + submit button */
     overflow-y: auto;
 }
 
+/* Style for text color in form controls within the profile update form */
 #profile-update-form .form-control {
     color: #000;
 }
 
+/* Style for placeholder text color in input fields of the profile update form */
 #profile-update-form input::placeholder {
     color: #aab7c4;
 }
 
+/* Style for text color in default country dropdown and its options */
 #id_default_country,
 #id_default_country option:not(:first-child) {
     color: #000;
 }
 
+/* Style for placeholder text color in the default country dropdown's initial option */
 #id_default_country option:first-child {
     color: #aab7c4;
 }

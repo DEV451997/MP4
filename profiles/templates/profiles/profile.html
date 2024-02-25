@@ -2,10 +2,12 @@
 {% load static %}
 
 {% block extra_css %}
+    <!-- Include additional CSS styles for the profile page -->
     <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
 {% endblock %}
 
 {% block page_header %}
+    <!-- Page header block -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -14,6 +16,7 @@
 {% endblock %}
 
 {% block content %}
+    <!-- Content block with an overlay -->
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -25,6 +28,7 @@
         </div>
         <div class="row">
             <div class="col-12 col-lg-6">
+                <!-- Default Delivery Information form -->
                 <p class="text-muted">Default Delivery Information</p>
                 <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                     {% csrf_token %}
@@ -32,6 +36,7 @@
                     <button class="btn btn-black rounded-0 text-uppercase float-right">Update Information</button>
                 </form>
             </div>
+             <!-- Order History section -->
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Order History</p>
                 <div class="order-history table-responsive">
@@ -46,6 +51,7 @@
                         </thead>
                         <tbody>
                             {% for order in orders %}
+                            <!-- Individual order row -->
                                 <tr>
                                     <td>
                                         <a href="{% url 'order_history' order.order_number %}"
@@ -55,6 +61,7 @@
                                     </td>
                                     <td>{{ order.date }}</td>
                                     <td>
+                                         <!-- List of ordered items for each order -->
                                         <ul class="list-unstyled">
                                             {% for item in order.lineitems.all %}
                                                 <li class="small">
@@ -76,6 +83,7 @@
 {% endblock %}
 
 {% block postloadjs %}
+        <!-- Include additional JavaScript for post-loading tasks -->
     {{ block.super }}
     <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
 {% endblock %}
