@@ -1,3 +1,4 @@
+/* Global styling */
 html {
     height: 100%;
 }
@@ -19,19 +20,23 @@ body {
     width: 1.5rem;
 }
 
+/* Styling for delivery banner links */
 #delivery-banner a {
     color: white;
     text-decoration: none;
 }
 
+/* Logo font styling */
 .logo-font  {
     text-transform: uppercase;
 }
 
+/* Main logo link styling */
 .main-logo-link {
     width: fit-content;
 }
 
+/* Styling for shop now button */
 .shop-now-button {
     background: black;
     color: white;
@@ -43,12 +48,14 @@ body {
     color: white;
 }
 
+/* Styling for black outline button */
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
+/* Hover and focus styling for buttons */
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
@@ -66,18 +73,22 @@ body {
     color: white;
 }
 
+/* Text color styling */
 .text-black {
     color: #000 !important;
 }
 
+/* Border styling */
 .border-black {
     border: 1px solid black !important;
 }
 
+/* Background styling */
 .bg-black {
     background: #000 !important;
 }
 
+/* Overlay styling */
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -88,11 +99,13 @@ body {
 	z-index: -1;
 }
 
+/* Styling for category badge */
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
 }
 
+/* Back-to-top button styling */
 .btt-button {
     height: 42px;
     width: 42px;
@@ -101,12 +114,14 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
+/* Styling for clickable links */
 .btt-link,
 .update-link,
 .remove-item {
     cursor: pointer;
 }
 
+/* Placeholder text color styling */
 input[name='q']::placeholder {
     color: #aab7c4;
 }
