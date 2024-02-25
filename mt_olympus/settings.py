@@ -10,12 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-import os 
+import os
 import dj_database_url
 
 from pathlib import Path
 if os.path.exists("env.py"):
-  import env
+    import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -31,7 +31,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 
-ALLOWED_HOSTS = ['8000-dev451997-mp4-udrr7yfp7vk.ws-eu108.gitpod.io', 'mt-olympus-c1f69a0afc85.herokuapp.com','localhost']
+ALLOWED_HOSTS = [
+    '8000-dev451997-mp4-udrr7yfp7vk.ws-eu108.gitpod.io',
+    'mt-olympus-c1f69a0afc85.herokuapp.com',
+    'localhost'
+]
 
 
 # Application definition
@@ -102,7 +106,7 @@ TEMPLATES = [
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = (
-    
+
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
@@ -205,7 +209,7 @@ if 'USE_AWS' in os.environ:
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-    
+
 
 # Stripe
 FREE_DELIVERY_THRESHOLD = 50

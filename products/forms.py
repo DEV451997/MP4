@@ -34,4 +34,3 @@ class ProductForm(forms.ModelForm):
             raise forms.ValidationError('Rating must be between 1 and 5.')
 
         return rating
-        
