@@ -3,13 +3,18 @@ from .widgets import CustomClearableFileInput
 from .models import Product, Category
 
 
+# Form for the Product model
 class ProductForm(forms.ModelForm):
 
     class Meta:
         model = Product
         fields = '__all__'
-
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+    # Customizing the 'image' field with a clearable file input widget
+    image = forms.ImageField(
+        label='Image',
+        required=False,
+        widget=CustomClearableFileInput
+    )
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -21,6 +26,7 @@ class ProductForm(forms.ModelForm):
             field.widget.attrs['class'] = 'border-black rounded-0'
 
     def clean_rating(self):
+        # Custom cleaning method for the 'rating' field
         rating = self.cleaned_data.get('rating')
 
         # Ensure the rating is within the range of 1 to 5
@@ -28,3 +34,4 @@ class ProductForm(forms.ModelForm):
             raise forms.ValidationError('Rating must be between 1 and 5.')
 
         return rating
+        
