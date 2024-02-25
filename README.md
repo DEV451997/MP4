@@ -104,6 +104,47 @@ In regards to research I looked into e-commerce stores which provide the ability
 * Links to the shopping basket and user accounts enhance convenience.
 * The “My Account” section dynamically adjusts based on user status (registered, signed in, superuser, or regular user).
 
+<details>
+<summary>Landing Page</summary>
+<img src="media/landingpage.png">
+</details>
+
+<details>
+<summary>Dropdown</summary>
+<img src="media/dropdown.png">
+</details>
+
+
+<details>
+<summary>Search Bar</summary>
+<img src="media/searchbar.png">
+</details>
+
+<details>
+<summary>Shop Now</summary>
+<img src="media/shopnow.png">
+</details>
+
+<details>
+<summary>Bag</summary>
+<img src="media/bag-link.png">
+</details>
+
+<details>
+<summary>No account</summary>
+<img src="media/no-account.png">
+</details>
+
+<details>
+<summary>Regular User</summary>
+<img src="media/regular-user.png">
+</details>
+
+<details>
+<summary>Superuser</summary>
+<img src="media/superuser-loggedin.png">
+</details>
+
 ## Product Pages
 
 1. Product Overview
@@ -117,6 +158,21 @@ In regards to research I looked into e-commerce stores which provide the ability
 * The inclusion of a “back to top” arrow enhances usability, especially for mobile users.
 * Users no longer need to manually scroll to the top, resulting in a smoother navigation experience.
 
+<details>
+<summary>Products Page</summary>
+<img src="media/products.png">
+</details>
+
+<details>
+<summary>Sorting</summary>
+<img src="media/sort-by.png">
+</details>
+
+<details>
+<summary>Back to top</summary>
+<img src="media/backtotop.png">
+</details>
+
 ### Product Detail
 
 1. Individual Product Details
@@ -124,12 +180,27 @@ In regards to research I looked into e-commerce stores which provide the ability
 * Users gain access to detailed information about the product, including specifications, features, and any relevant descriptions.
 * Clear calls-to-action, “add to bag” or “keep shopping,” guide users seamlessly through the store.
 
+<details>
+<summary>Product Detail</summary>
+<img src="media/product-detail.png">
+</details>
+
 ### Edit/Delete Product
 
 1. Superuser/Admin Privileges
 * Superusers and administrators enjoy additional functionality.
 * Edit button provides direct access to edit product page.
 * Clicking the delete button triggers a modal confirmation, ensuring intentional actions.
+
+<details>
+<summary>Edit Product</summary>
+<img src="media/product-edit.png">
+</details>
+
+<details>
+<summary>Delete Product</summary>
+<img src="media/product-delete.png">
+</details>
 
 ## Clothing Pages
 
@@ -145,6 +216,11 @@ In regards to research I looked into e-commerce stores which provide the ability
 * Superusers benefit from the same level of control and management.
 * Edit and delete actions are consistent across all product sections.
 
+<details>
+<summary>Clothing</summary>
+<img src="media/clothing.png">
+</details>
+
 ## Supplements Pages
 
 1. Purpose and Functionality
@@ -152,6 +228,11 @@ In regards to research I looked into e-commerce stores which provide the ability
 2. Superuser Capabilties
 * Superusers benefit from the same level of control and management.
 * Edit and delete actions are consistent across all product sections.
+
+<details>
+<summary>Supplements</summary>
+<img src="media/supplements.png">
+</details>
 
 ## Blog
 
@@ -176,6 +257,31 @@ In regards to research I looked into e-commerce stores which provide the ability
 5. Enhanced User Experience
 * The inclusion of a “back to top” arrow maintains consistency across pages, enhancing navigation.
 
+<details>
+<summary>Blog</summary>
+<img src="media/blog.png">
+</details>
+
+<details>
+<summary>Read More Modal</summary>
+<img src="media/readmore.png">
+</details>
+
+<details>
+<summary>Edit Blog</summary>
+<img src="media/edit-blog.png">
+</details>
+
+<details>
+<summary>Delete Blog</summary>
+<img src="media/delete-blog.png">
+</details>
+
+<details>
+<summary>Back to top</summary>
+<img src="media/backtotop.png">
+</details>
+
 ## Contact Form
 
 1. Purpose and Accessibility
@@ -188,6 +294,16 @@ In regards to research I looked into e-commerce stores which provide the ability
     * Subject: A concise summary of the inquiry or message.
     * Message: The main content of the communication.
 * The form enforces completion of all fields; any missing information triggers an alert prompting users to fill out the required details.
+
+<details>
+<summary>Contact Us</summary>
+<img src="media/contactus.png">
+</details>
+
+<details>
+<summary>Contatc Us Form</summary>
+<img src="media/contactus-form.png">
+</details>
 
 ## Product/Blog Management 
 
@@ -207,6 +323,21 @@ In regards to research I looked into e-commerce stores which provide the ability
 5. Django Crispy Forms
 * The form creation process leverages Django Crispy Forms, ensuring clean and organized layouts.
 * Superusers can confidently manage content without technical hurdles. 
+
+<details>
+<summary>Product/Blog Management</summary>
+<img src="media/superuser-loggedin.png">
+</details>
+
+<details>
+<summary>Product Management</summary>
+<img src="media/product-management.png">
+</details>
+
+<details>
+<summary>Blog Management</summary>
+<img src="media/blog-management.png">
+</details>
 
 ## Profile/Register/Log in - Log out
 
@@ -230,6 +361,11 @@ In regards to research I looked into e-commerce stores which provide the ability
 * The seamless flow from registration to email confirmation enhances user experience.
 * Security measures, such as email verification, protect user accounts.
 
+<details>
+<summary>Register</summary>
+<img src="media/register.png">
+</details>
+
 ### Log In
 
 1. Purpose and Context
@@ -247,6 +383,11 @@ In regards to research I looked into e-commerce stores which provide the ability
 * A “Forgot Password?” link provides a convenient way for users to reset their password.
 * Clicking this link directs them to the Forgot Password Page, where they can initiate the recovery process.
 
+<details>
+<summary>Log In</summary>
+<img src="media/login.png">
+</details>
+
 ### Log Out
 
 1. Clear Purpose
@@ -258,6 +399,11 @@ In regards to research I looked into e-commerce stores which provide the ability
 * When users click Logout, they are directed to a confirmation page:
     * Sign Out: This action immediately logs them out.
     * Cancel: If they change their mind, clicking this button returns them to the home page.
+
+<details>
+<summary>Log Out</summary>
+<img src="media/logout.png">
+</details>
 
 ## Profile
 
@@ -272,6 +418,11 @@ In regards to research I looked into e-commerce stores which provide the ability
 * The profile page displays a comprehensive order history.
 * Users can review details of their previous orders, including items purchased, dates, and order totals.
 * Clicking on a specific order provides additional information, order details and address.
+
+<details>
+<summary>Profile</summary>
+<img src="media/profile.png">
+</details>
 
 ## Bag
 
@@ -296,6 +447,16 @@ In regards to research I looked into e-commerce stores which provide the ability
 * For registered users, pre-filled information speeds up the process.
 * Finally, when it’s time to pay, Stripe handles the payment securely.
 
+<details>
+<summary>Bag</summary>
+<img src="media/bag.png">
+</details>
+
+<details>
+<summary>Checkout</summary>
+<img src="media/checkout.png">
+</details>
+
 ## Toasts
 
 1. Purpose and Context
@@ -310,7 +471,15 @@ In regards to research I looked into e-commerce stores which provide the ability
 * Toasts prioritize user awareness and feedback.
 * They create a sense of accomplishment (e.g., successful login) or provide essential information (e.g., order confirmation).
 4. Examples
-<img src="">
+
+<details>
+<summary>Examples</summary>
+<img src="media/bag-toast.png">
+<img src="media/edit-toast.png">
+<img src="media/success-toast.png">
+</details>
+
+These are just a few examples of the many toats that await when performing actions throughout the site!
 
 ## User Stories
 
