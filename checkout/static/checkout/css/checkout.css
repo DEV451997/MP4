@@ -1,3 +1,4 @@
+/* StripeElement and stripe-style-input styling */
 .StripeElement,
 .stripe-style-input {
   box-sizing: border-box;
@@ -11,41 +12,51 @@
   transition: box-shadow 150ms ease;
 }
 
+/* Focus and active state styling for StripeElement and stripe-style-input */
 .StripeElement--focus,
 .stripe-style-input:focus,
 .stripe-style-input:active {
   box-shadow: 0 1px 3px 0 #cfd7df;
 }
 
+/* Styling for StripeElement when Webkit autofill is applied */
+
 .StripeElement--webkit-autofill {
   background-color: #fefde5 !important;
 }
 
+/* Placeholder styling for stripe-style-input */
 .stripe-style-input::placeholder {
     color: #aab7c4;
 }
 
+
+/* Styling for fieldset-label */
 .fieldset-label {
     position: relative;
     right: .5rem;
 }
 
+/* Styling for payment form and card element */
 #payment-form .form-control,
 #card-element {
     color: #000;
     border: 1px solid #000;
 }
 
+/* Styling for select and select options */
 select,
 select option {
     color: #000000;
 }
 
+/* Styling for invalid select and empty option */
 select:invalid,
 select option[value=""] {
     color: #aab7c4 !important;
 }
 
+/* Loading overlay styling */
 #loading-overlay {
 	display: none;
 	position: fixed;
@@ -57,6 +68,7 @@ select option[value=""] {
     z-index: 9999;
 }
 
+/* Loading spinner styling */
 .loading-spinner {
 	display: flex;
     align-items: center;

@@ -2,10 +2,12 @@
 {% load static %}
 
 {% block extra_css %}
+    <!-- Include additional CSS for this template -->
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block page_header %}
+    <!-- Page header content -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -14,6 +16,7 @@
 {% endblock %}
 
 {% block content %}
+    <!-- Main content block -->
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -25,6 +28,7 @@
             </div>
         </div>
 
+        <!-- Order details section -->
         <div class="row">
             <div class="col-12 col-lg-7">
                 <div class="order-confirmation-wrapper p-2 border">
@@ -34,6 +38,7 @@
                         </div>
                     </div>
 
+                    <!-- Order Number -->
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Order Number</p>
@@ -43,6 +48,7 @@
                         </div>
                     </div>
 
+                    <!-- Order Date -->
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Order Date</p>
@@ -52,6 +58,7 @@
                         </div>
                     </div>
 
+                    <!-- Order Details -->
                     <div class="row">
                         <div class="col">
                             <small class="text-muted">Order Details:</small>
@@ -59,6 +66,7 @@
                     </div>
 
                     {% for item in order.lineitems.all %}
+                    <!-- Order Item Details -->
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="small mb-0 text-black font-weight-bold">
@@ -77,6 +85,7 @@
                         </div>
                     </div>
 
+                    <!-- Address Details -->
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Full Name</p>
@@ -155,6 +164,7 @@
                         </div>
                     </div>
 
+                    <!-- Order Total -->
                     <div class="row">
                         <div class="col">
                             <small class="text-muted">Billing Info:</small>
@@ -190,6 +200,7 @@
                 </div>
             </div>
         </div>
+        <!-- Back to profile and products buttons -->
         <div class="row">
 			<div class="col-12 col-lg-7 text-right">
                 {% if from_profile %}
