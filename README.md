@@ -670,6 +670,19 @@ All JS was put through the above validator. Git push were performed when files w
 [Python Validator](https://pep8ci.herokuapp.com/) The Python page was run through pep8 validator.
 All Python was put through the above validator. Git push were performed when files were being commented upon and validated. All files were made PEP8 compliant, making sure functionality remained.
 
+### Pep8 compliance
+
+* Using the above pep8 validator and the command python3 -m flake8. I was able to work through all Python issues.
+* Issues that remain are below:
+    * Imports that were not used I have not removed for further expansion of the application.
+    * Variables that were imported have not been removed for the same reason.
+    * Lines that remain too long, I could see a correct way to ident them.
+
+<details>
+<summary>flake8 terminal</summary>
+<img src="media/flake8.png">
+</details>
+
 ## Responsiveness
 
 The site was tested on the following devices:
