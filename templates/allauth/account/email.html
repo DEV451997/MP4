@@ -5,6 +5,7 @@
 {% block head_title %}{% trans "Account" %}{% endblock %}
 
 {% block inner_content %}
+  <!-- Start of inner content for managing e-mail addresses -->
     <hr>
     <h2 class="logo-font mb-4">{% trans "E-mail Addresses" %}</h2>
     <hr>
@@ -55,10 +56,12 @@
         <button name="action_add" type="submit">{% trans "Add E-mail" %}</button>
     </form>
 
+    <!-- End of inner content for managing e-mail addresses -->
 {% endblock %}
 
 
 {% block extra_body %}
+<!-- JavaScript to confirm e-mail address removal -->
 <script type="text/javascript">
 (function() {
   var message = "{% trans 'Do you really want to remove the selected e-mail address?' %}";
