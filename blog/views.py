@@ -5,6 +5,7 @@ from .forms import PostForm
 from django.contrib import messages
 
 
+# View for displaying the blog page
 def blog(request):
     posts = Post.objects.order_by('-featured',)
     categories = Category.objects.all()
@@ -15,6 +16,7 @@ def blog(request):
     return render(request, 'blog/blog.html', context)
 
 
+# View for adding a new blog post
 @login_required
 def blog_post(request):
     """ Add a blog post """
@@ -43,6 +45,7 @@ def blog_post(request):
     return render(request, template, context)
 
 
+# View for editing an existing blog post
 @login_required
 def edit_blog(request, post_id):
     """ Edit a blog post """
@@ -74,6 +77,7 @@ def edit_blog(request, post_id):
     return render(request, template, context)
 
 
+# View for deleting an existing blog post
 @login_required
 def delete_post(request, post_id):
     """ Delete a blog post  """

@@ -2,6 +2,7 @@ from django.urls import path
 from .views import blog
 from . import views
 
+# Django urlpatterns for blog-related views
 urlpatterns = [
     path('', blog, name='blog'),
     path('add/', views.blog_post, name='blog_post'),

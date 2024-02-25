@@ -1,9 +1,11 @@
 from django.contrib.auth import get_user_model
 from django.db import models
 
+# Getting the User model dynamically
 User = get_user_model()
 
 
+# Representing an author with a one-to-one relationship to the User model
 class Author(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
@@ -11,6 +13,7 @@ class Author(models.Model):
         return self.user.username
 
 
+# Category model representing a blog category
 class Category(models.Model):
     title = models.CharField(max_length=20)
     subtitle = models.CharField(max_length=20)
@@ -21,6 +24,7 @@ class Category(models.Model):
         return self.title
 
 
+# Post model representing a blog post
 class Post(models.Model):
     title = models.CharField(max_length=100)
     slug = models.SlugField()

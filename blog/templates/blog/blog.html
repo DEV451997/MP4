@@ -2,9 +2,11 @@
 {% load static %}
 
 {% block content %}
+<!-- Blog Posts Section -->
 <div class="col blog-header">
     <div class="row">
         {% for post in posts %}
+         <!-- Individual Blog Post Card -->
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
             <div class="card h-100 border-0">
                 <div class="card-body pb-0 text-center">
@@ -22,7 +24,8 @@
                             <p class="small mt-1 mb-0">
                                 <img src="{{ post.thumbnail.url }}" alt="{{ post.title }}" class="img-fluid rounded">
                             </p>
-
+                            
+                            <!-- Post Content with Read More Link -->
                             {% if post.content|length > 50 %}
                             <p>{{ post.content|truncatewords:50 }} <a href="#" class="read-more-link"
                                     data-toggle="modal" data-target="#readMoreModal{{ post.id }}">Read More</a></p>
@@ -32,6 +35,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Edit and Delete Links for Superuser -->
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
                     <a href="{% url 'edit_blog' post.id %}">Edit</a>
@@ -42,7 +46,7 @@
             </div>
         </div>
 
-        <!-- Confirmation Modal -->
+        <!-- Delete Confirmation Modal -->
         <div class="modal fade" id="deleteConfirmationModal{{ post.id }}" tabindex="-1" role="dialog"
             aria-labelledby="deleteConfirmationModalLabel{{ post.id }}" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -64,9 +68,8 @@
             </div>
         </div>
 
-
-        {% if post.content|length > 50 %}
         <!-- Read More Modal -->
+        {% if post.content|length > 50 %}
         <div class="modal fade" id="readMoreModal{{ post.id }}" tabindex="-1" role="dialog"
             aria-labelledby="readMoreModalLabel{{ post.id }}" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -93,6 +96,8 @@
         {% endfor %}
     </div>
 </div>
+
+<!-- Back to Top Button -->
 <div class="btt-button shadow-sm rounded-0 border border-black">
     <a class="btt-link d-flex h-100">
         <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
@@ -102,6 +107,7 @@
 
 {% block postloadjs %}
     {{ block.super }}
+    <!-- JavaScript to scroll to the top when Back to Top button is clicked -->
     <script type="text/javascript">
 		$('.btt-link').click(function(e) {
 			window.scrollTo(0,0)
