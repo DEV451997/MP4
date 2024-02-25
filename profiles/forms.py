@@ -4,6 +4,7 @@ from .models import UserProfile
 
 class UserProfileForm(forms.ModelForm):
     class Meta:
+        # Specify the model that the form is associated with
         model = UserProfile
         exclude = ('user',)
 
@@ -13,6 +14,7 @@ class UserProfileForm(forms.ModelForm):
         labels and set autofocus on first field
         """
         super().__init__(*args, **kwargs)
+        # Define placeholders for form fields
         placeholders = {
             'default_phone_number': 'Phone Number',
             'default_postcode': 'Postal Code',
@@ -23,6 +25,7 @@ class UserProfileForm(forms.ModelForm):
         }
 
         self.fields['default_phone_number'].widget.attrs['autofocus'] = True
+        # Loop form fields to set placeholders, classes, and remove labels
         for field in self.fields:
             if field != 'default_country':
                 if self.fields[field].required:
@@ -30,5 +33,7 @@ class UserProfileForm(forms.ModelForm):
                 else:
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
+            self.fields[field].widget.attrs['class'] = (
+                'border-black rounded-0 profile-form-input'
+            )
             self.fields[field].label = False
