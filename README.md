@@ -504,29 +504,88 @@ These are just a few examples of the many toats that await when performing actio
 | -------- | -------- | -------- |
 |  User registration form. | Users can create an account by providing their email, password, and other relevant details. | User fills out the registration form. Clicks the “Sign Up” button. User then confirms emails. Can now log in using the registered credentials. |
 
+<details>
+<summary>User Profile</summary>
+<img src="media/user-profile.png">
+</details>
+
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
 | Product Exploration | View a list of products with relevant details (name, price, image). | User navigates to the product listing page. User clicks on a product to view its details. User is provided all the relevant information.|
+
+<details>
+<summary>All Products</summary>
+<img src="media/products.png">
+</details>
+
+<details>
+<summary>Product Detail</summary>
+<img src="media/product-detail.png">
+</details>
 
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
 | Efficient Navigation and Search | I expect items to be filtered down to my search results or shown in a way I have filtered. | Navigate to products page and use the search bar. Products matching that word will be shown below. Items filtered using the sort-by feature will be shown depending on the filter the user has clicked. |
 
+<details>
+<summary>Search Results</summary>
+<img src="media/product-search.png">
+</details>
+
+<details>
+<summary>Filtered Results Rating High - Low</summary>
+<img src="media/product-highlow.png">
+</details>
+
+<details>
+<summary>Filtered Results Rating Low - High</summary>
+<img src="media/rating-lowhigh.png">
+</details>
+
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
 | Bag Management  | Items added to basket to be shown within the bag with all relevant information, especially quantities. | Items added to the bag via "add to bag" are shown in the order they were added, along with quantities and the abilty to update or remove. |
+
+<details>
+<summary>Bagged Items</summary>
+<img src="media/shopping-bag.png">
+</details>
 
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
 | Contact and Support |  I expect a contact form to be provided for any queries I may have. | Contact Us. Is prevelant across all pages. Upon clicking contact us the user is prompted to fill in the form, where a toast will display, saying their message was succesfully sent. |
 
+<details>
+<summary>Form Sent</summary>
+<img src="media/message-success.png">
+</details>
+
+<details>
+<summary>Terminal Log</summary>
+<img src="media/terminal-success.png">
+</details>
+
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
 | Seamless Checkout Process | I expect an easy, streamlined checkout process. | If a user has a profile the checkout form will mostly be pre filled, streamlining the process. The information needs to be filled out along with a card to submit payment. Once submitted payment is taken and the order is placed. |
 
+<details>
+<summary>Completed Order</summary>
+<img src="media/checkout-success.png">
+</details>
+
 | **Feature** | **Expect** | **Action/Result** | 
 | -------- | -------- | -------- |
 | Blog | I expect to be kept upto date with information regarding Mt. Olympus. | Navigating to the Blog page, users are displayed with posts regarding Mt.Olmypus. |
+
+<details>
+<summary>Blog Page</summary>
+<img src="media/blog-posts.png">
+</details>
+
+### Conclusion
+* Site features have been throughly tested. Screenshots from the User Stories show succesful User Stories.
+* The site if fully functional across all screen sizes and provide a great shopping experience for users.
 
 ## Future Features
 
