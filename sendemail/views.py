@@ -32,10 +32,10 @@ class ContactView(FormView):
             {message}
             """
         # Send an email notification
-        send_mail(
-            subject="Received contact form submission",
-            message=full_message,
-            from_email=settings.DEFAULT_FROM_EMAIL,
-            recipient_list=[settings.NOTIFY_EMAIL],
-        )
+     #   send_mail(
+     #       subject="Received contact form submission",
+     #       message=full_message,
+     #       from_email=settings.DEFAULT_FROM_EMAIL,
+     #       recipient_list=[settings.NOTIFY_EMAIL],
+     #   )
         return super(ContactView, self).form_valid(form)
