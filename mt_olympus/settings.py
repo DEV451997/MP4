@@ -34,8 +34,8 @@ DEBUG = 'DEVELOPMENT' in os.environ
 ALLOWED_HOSTS = [
     '8000-dev451997-mp4-udrr7yfp7vk.ws-eu110.gitpod.io',
     'mt-olympus-c1f69a0afc85.herokuapp.com',
-    'localhost'
-    'smtp.gmail.com'
+    'localhost',
+    'smtp.gmail.com',
 ]
 
 
