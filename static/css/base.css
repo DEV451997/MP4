@@ -11,6 +11,15 @@ body {
     font-family: 'Lato';
 }
 
+footer{
+    margin-top: 400px;
+}
+
+footer i {
+    padding: 5px;
+    margin: 10px;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
