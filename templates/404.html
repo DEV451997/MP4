@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <!-- Page header block -->
+    <div class="container header-container text-center">
+        <h1 class="text-black">404 - Page not found!</h1>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay bg-white"></div>
+    <div>
+        <p class="text-black text-center">The page you requested could not be found.</p>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {# Empty block to override the footer from the base.html #}
+{% endblock %}
