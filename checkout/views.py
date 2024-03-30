@@ -24,6 +24,9 @@ import json
 # View for caching checkout data before payment
 @require_POST
 def cache_checkout_data(request):
+    """
+    View to cache checkout data before payment.
+    """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -41,6 +44,9 @@ def cache_checkout_data(request):
 
 # Main checkout view
 def checkout(request):
+    """
+    Main checkout view.
+    """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 

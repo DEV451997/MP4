@@ -17,3 +17,7 @@ urlpatterns = [
     ),
     path('wh/', webhook, name='webhook'),
 ]
+
+"""
+URL patterns for checkout views.
+"""

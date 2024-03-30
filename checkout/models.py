@@ -12,6 +12,9 @@ from profiles.models import UserProfile
 
 # Model for an Order
 class Order(models.Model):
+    """ 
+    Model representing an order
+     """
     # Unique order number generated using UUID
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
@@ -78,6 +81,9 @@ class Order(models.Model):
 
 # Model for an Order Line Item
 class OrderLineItem(models.Model):
+    """
+    Model for order line item
+    """
     order = models.ForeignKey(
         Order,
         null=False,

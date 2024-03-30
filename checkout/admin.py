@@ -2,14 +2,42 @@ from django.contrib import admin
 from .models import Order, OrderLineItem
 
 
-# Inline admin for OrderLineItem within OrderAdmin
 class OrderLineItemAdminInline(admin.TabularInline):
+    """
+    Inline admin for OrderLineItem within OrderAdmin.
+
+    This class defines the inline
+    admin configuration for the OrderLineItem model
+    to be displayed within the OrderAdmin page in the Django admin interface.
+
+    Attributes:
+        model: The model associated with the inline admin (OrderLineItem).
+        readonly_fields:
+        The fields in the inline admin that should be read-only.
+    """
     model = OrderLineItem
     readonly_fields = ('lineitem_total',)
 
 
-# Main admin configuration for the Order model
 class OrderAdmin(admin.ModelAdmin):
+    """
+    Main admin configuration for the Order model.
+
+    This class defines the main admin configuration for the Order model in the
+    Django admin interface.
+    It specifies the fields to be displayed, their read-only
+    status, list display settings, ordering, and inline admin configuration for
+    related models.
+
+    Attributes:
+        inlines: The inline admin classes,
+        associated with the main admin (OrderLineItemAdminInline).
+        readonly_fields: The fields in the main admin that should be read-only.
+        fields: The fields to be displayed in the main admin.
+        list_display: The fields to be displayed,
+        in the list view of the main admin.
+        ordering: The ordering of records in the main admin.
+    """
     inlines = (OrderLineItemAdminInline,)
 
     readonly_fields = ('order_number', 'date',
@@ -31,5 +59,4 @@ class OrderAdmin(admin.ModelAdmin):
     ordering = ('-date',)
 
 
-# Register the Order model with the custom admin configuration
 admin.site.register(Order, OrderAdmin)
