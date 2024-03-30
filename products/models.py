@@ -3,6 +3,12 @@ from django.db import models
 
 # Model for Category
 class Category(models.Model):
+    """
+    Model for product categories.
+
+    This model represents the categories under which products are classified.
+    Each category has a name and an optional friendly name.
+    """
 
     class Meta:
         verbose_name_plural = 'Categories'
@@ -19,6 +25,14 @@ class Category(models.Model):
 
 # Model for Product
 class Product(models.Model):
+    """
+    Model for products.
+
+    This model represents individual products available in the store.
+    Each product belongs to a category and has various attributes such as
+    SKU, name, description, price, rating, and image.
+    """
+
     category = models.ForeignKey(
         'Category',
         null=True,

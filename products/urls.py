@@ -13,3 +13,7 @@ urlpatterns = [
         name='delete_product'
     ),
 ]
+
+"""
+URL patterns for products views.
+"""

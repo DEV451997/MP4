@@ -5,6 +5,9 @@ from .models import Product, Category
 
 # Form for the Product model
 class ProductForm(forms.ModelForm):
+    """
+    Form for the Product model.
+    """
 
     class Meta:
         model = Product
@@ -26,6 +29,18 @@ class ProductForm(forms.ModelForm):
             field.widget.attrs['class'] = 'border-black rounded-0'
 
     def clean_rating(self):
+        """
+        Custom cleaning method for the 'rating' field.
+
+        This method ensures that the rating falls within the range of 1 to 5.
+
+        Returns:
+            int: The cleaned rating value.
+
+        Raises:
+            forms.ValidationError:
+            If the rating is outside the range of 1 to 5.
+        """
         # Custom cleaning method for the 'rating' field
         rating = self.cleaned_data.get('rating')
 
