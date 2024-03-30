@@ -150,6 +150,10 @@
     </div>
 {% endblock %}
 
+{% block footer %}
+    {# Empty block to override the footer from the base.html #}
+{% endblock %}
+
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}

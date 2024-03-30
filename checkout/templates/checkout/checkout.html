@@ -151,6 +151,10 @@
     </div>
 {% endblock %}
 
+{% block footer %}
+    {# Empty block to override the footer from the base.html #}
+{% endblock %}
+
 {% block postloadjs %}
     {{ block.super }}
     {{ stripe_public_key|json_script:"id_stripe_public_key" }}

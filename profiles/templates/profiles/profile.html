@@ -82,6 +82,10 @@
         </div>
 {% endblock %}
 
+{% block footer %}
+    {# Empty block to override the footer from the base.html #}
+{% endblock %}
+
 {% block postloadjs %}
         <!-- Include additional JavaScript for post-loading tasks -->
     {{ block.super }}
