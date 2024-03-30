@@ -7,6 +7,7 @@ from django.contrib import messages
 
 # View for displaying the blog page
 def blog(request):
+    """ view for displaying the blog page """
     posts = Post.objects.order_by('-featured',)
     categories = Category.objects.all()
     context = {
