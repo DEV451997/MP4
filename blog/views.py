@@ -7,7 +7,9 @@ from django.contrib import messages
 
 # View for displaying the blog page
 def blog(request):
-    """ view for displaying the blog page """
+    """ 
+    view for displaying the blog page
+     """
     posts = Post.objects.order_by('-featured',)
     categories = Category.objects.all()
     context = {
@@ -20,7 +22,9 @@ def blog(request):
 # View for adding a new blog post
 @login_required
 def blog_post(request):
-    """ Add a blog post """
+    """ 
+    Add a blog post 
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -49,7 +53,9 @@ def blog_post(request):
 # View for editing an existing blog post
 @login_required
 def edit_blog(request, post_id):
-    """ Edit a blog post """
+    """
+    Edit a blog post
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -81,7 +87,9 @@ def edit_blog(request, post_id):
 # View for deleting an existing blog post
 @login_required
 def delete_post(request, post_id):
-    """ Delete a blog post  """
+    """
+    Delete a blog post
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
