@@ -4,7 +4,9 @@ from .models import UserProfile
 
 class UserProfileForm(forms.ModelForm):
     class Meta:
-        # Specify the model that the form is associated with
+        """
+        Specify the model that the form is associated with
+        """
         model = UserProfile
         exclude = ('user',)
 
@@ -25,7 +27,9 @@ class UserProfileForm(forms.ModelForm):
         }
 
         self.fields['default_phone_number'].widget.attrs['autofocus'] = True
-        # Loop form fields to set placeholders, classes, and remove labels
+        """
+        Loop form fields to set placeholders, classes, and remove labels
+        """
         for field in self.fields:
             if field != 'default_country':
                 if self.fields[field].required:

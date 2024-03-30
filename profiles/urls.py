@@ -9,3 +9,8 @@ urlpatterns = [
         name='order_history'
     ),
 ]
+
+
+"""
+URL patterns for profile views.
+"""

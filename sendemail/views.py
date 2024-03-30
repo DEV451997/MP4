@@ -9,6 +9,9 @@ from .forms import ContactForm
 
 # A view for handling the contact form submission.
 class ContactView(FormView):
+    """
+    form for contact form
+    """
     form_class = ContactForm
     template_name = "contact.html"
 
@@ -17,6 +20,9 @@ class ContactView(FormView):
 
 # Handle the valid form submission.
     def form_valid(self, form):
+        """
+        handles form validation
+        """
         email = form.cleaned_data.get("email")
         subject = form.cleaned_data.get("subject")
         message = form.cleaned_data.get("message")
@@ -31,5 +37,5 @@ class ContactView(FormView):
 
             {message}
             """
-  
+
         return super(ContactView, self).form_valid(form)

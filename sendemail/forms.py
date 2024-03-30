@@ -2,6 +2,9 @@ from django import forms
 
 
 class ContactForm(forms.Form):
+    """
+    A Django form for handling contact information.
+    """
     email = forms.EmailField(
         widget=forms.TextInput(attrs={"placeholder": "Your e-mail"})
     )
