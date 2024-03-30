@@ -5,9 +5,18 @@ from django.shortcuts import get_object_or_404
 from products.models import Product
 
 
-# Function to retrieve and calculate information about the shopping bag
 def bag_contents(request):
+    """
+    Retrieve and calculate information about the shopping bag.
 
+    Returns:
+        dict: A dictionary containing information about the items
+        in the shopping bag.
+              The dictionary includes keys such as,
+              'bag_items', 'total', 'product_count',
+              'delivery', 'free_delivery_delta',
+              'free_delivery_threshold', and 'grand_total'.
+    """
     bag_items = []
     total = 0
     product_count = 0
