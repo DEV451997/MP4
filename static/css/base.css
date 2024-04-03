@@ -380,3 +380,9 @@ input[name='q']::placeholder {
 .blog-header {
     margin-top: 200px;
 }
+
+/* Styling for all forms input fields */
+.form-control {
+    border: 1px solid black;
+    border-radius: 0px;
+}

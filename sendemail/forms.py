@@ -5,12 +5,6 @@ class ContactForm(forms.Form):
     """
     A Django form for handling contact information.
     """
-    email = forms.EmailField(
-        widget=forms.TextInput(attrs={"placeholder": "Your e-mail"})
-    )
-    subject = forms.CharField(
-        widget=forms.TextInput(attrs={"placeholder": "Subject"})
-    )
-    message = forms.CharField(
-        widget=forms.Textarea(attrs={"placeholder": "Your message"})
-    )
+    email = forms.EmailField()
+    subject = forms.CharField()
+    message = forms.CharField(widget=forms.Textarea())
