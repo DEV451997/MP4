@@ -2,7 +2,7 @@
     <!-- Display initial content if widget is not empty -->
     <p>{{ widget.initial_text }}:</p>
     <a href="{{ widget.value.url }}">
-        <img width="96" height="96" class="rounded shadow-sm" src="{{ widget.value.url }}">
+        <img width="96" height="96" class="rounded shadow-sm" src="{{ widget.value.url }}" alt="product image">
     </a>
     {% if not widget.required %}
          <!-- Display checkbox for clearing the current selection if widget is not required -->
