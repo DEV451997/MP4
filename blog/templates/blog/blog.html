@@ -48,7 +48,7 @@
 
         <!-- Delete Confirmation Modal -->
         <div class="modal fade" id="deleteConfirmationModal{{ post.id }}" tabindex="-1" role="dialog"
-            aria-labelledby="deleteConfirmationModalLabel{{ post.id }}" aria-hidden="true">
+            aria-labelledby="deleteConfirmationModal{{ post.id }}" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -77,7 +77,7 @@
                     <div class="modal-header text-center">
                         <h5 class="modal-title" id="readMoreModalLabel{{ post.id }}">
                             {% if post.featured %}
-                            <p class="text-warning font-weight-bold">Featured Post</p>
+                            <em class="text-warning font-weight-bold">Featured Post:</em>
                             {% endif %}
                             {{ post.title }}
                         </h5>
