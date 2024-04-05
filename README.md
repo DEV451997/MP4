@@ -753,6 +753,18 @@ The site was tested on the following devices:
     * ZIP
 * Upon submitting payment I navigated over to Stripe where you can see payments have been succesful.
 
+4. Markup Errors
+* When it came to markup errors each page was tested by going to the deployed site and using 'Ctrl + U'. This displays Django in rendered HTML.
+* All errors have been cleared.
+* One warning remains which is displayed below:
+<details>
+<summary>JS warning</summary>
+<img src="media/js-warning.png">
+</details>
+
+* Removing type from the JS disables the functionality of the JavaScript, therefore this warning has been left.
+
+
 <details>
 <summary>Stripe Success</summary>
 <img src="media/stripe-test.png">
