@@ -157,14 +157,14 @@
 {% block postloadjs %}
     {{ block.super }}
     <!-- JavaScript for smooth scroll to the top when back to top button is clicked -->
-    <script type="text/javascript">
+    <script>"text/javascript">
 		$('.btt-link').click(function(e) {
 			window.scrollTo(0,0);
 		});
 	</script>
     
     <!-- JavaScript for handling product sorting -->
-    <script type="text/javascript">
+    <script>"text/javascript">
         $('#sort-selector').change(function() {
             var selector = $(this);
             var currentUrl = new URL(window.location);
