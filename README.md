@@ -805,7 +805,7 @@ The site was tested on the following devices:
 
 <details>
 <summary>Order Confirmation Email</summary>
-<img src="">
+<img src="media/order-email-confirmation.png">
 </details>
 
 <details>
