@@ -358,7 +358,6 @@ input[name='q']::placeholder {
 }
 
 /* Contact form styling */
-
 .contact-header {
     padding-top: 200px;
     color: white;
@@ -387,8 +386,7 @@ input[name='q']::placeholder {
     border-radius: 0px;
 }
 
-/* Emoji Styling */
-
-.emoji {
-    font-size: 200%;
+/* 404 Page Styling */
+.error-page {
+    margin-top: 400px;
 }
