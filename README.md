@@ -752,6 +752,10 @@ The site was tested on the following devices:
     * CVC
     * ZIP
 * Upon submitting payment I navigated over to Stripe where you can see payments have been succesful.
+<details>
+<summary>Stripe Success</summary>
+<img src="media/stripe-test.png">
+</details>
 
 4. Markup Errors
 * When it came to markup errors each page was tested by going to the deployed site and using 'Ctrl + U'. This displays Django in rendered HTML.
@@ -764,10 +768,55 @@ The site was tested on the following devices:
 
 * Removing type from the JS disables the functionality of the JavaScript, therefore this warning has been left.
 
+5. Sending real emails via Django.
+* Having Development in my heroku config vars, and testing via Gitpod. Emails were sent to the console.
+* Removing Development from Heroku led to a Server (500) error.
+* To fix the issue it required me to downgrade my Python package using:
+    * touch runtime.txt && echo "python-3.9.16" > runtime.txt in the terminal.
+    * Then adding urllib3==1.26.18 into my requirements.txt
+    * Finally running pip install -r requirements.txt and initiating a git push.
+* Upon registering on the deployed site and making a purchase, I can confirm emails are sent. Images of such are found below.
 
 <details>
-<summary>Stripe Success</summary>
-<img src="media/stripe-test.png">
+<summary>Sign Up</summary>
+<img src="media/sign-up.png">
+</details>
+
+<details>
+<summary>Sign Up Confirmation</summary>
+<img src="media/sign-up-confirmation.png">
+</details>
+
+<details>
+<summary>Email Confirmation</summary>
+<p> Upon copying the link into the browser. The user will be taken to the confirmation page via the deployed site. </p>
+<img src="media/emailtemp-confirmation.png">
+</details>
+
+<details>
+<summary>Email Confirm</summary>
+<img src="media/email-confirmation.png">
+</details>
+
+<details>
+<summary>Email Confirmation Toast</summary>
+<img src="media/email-confirmation-toast.png">
+</details>
+
+<details>
+<summary>Order Confirmation Email</summary>
+<img src="">
+</details>
+
+<details>
+<summary>Password Reset Email</summary>
+<img src="media/password-reset.png">
+</details>
+
+<details>
+<summary>Bad Token</summary>
+<p> The bad token is shown if the user enters an invalid link. </p>
+<img src="media/bad-token.png">
 </details>
 
 ## Credits
